@@ -27,4 +27,13 @@ public class ControleTarefa {
     public ArrayList<Tarefa> getTarefas() {
         return tarefas;
     }
+
+    public Tarefa buscarTarefaPorId(int id) {
+        for (Tarefa tarefa : tarefas) {
+            if (tarefa.getId() == id) {
+                return tarefa;
+            }
+        }
+        return null;
+    }
 }
